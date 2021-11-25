@@ -6,6 +6,7 @@ use Illuminate\Database\Seeder;
 use App\Models\User;
 use App\Models\Category;
 use App\Models\Post;
+
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -17,14 +18,15 @@ class DatabaseSeeder extends Seeder
     {
         
 
-        // User::create([
-        //     'name' => 'Aji fattah',
-        //     'email' => 'ajifattah7@gmail.com',
-        //     'password' => bcrypt('12345')
-        // ]);
+        User::create([
+            'name' => 'Aji fattah',
+            'username' => 'ajifattah',
+            'email' => 'ajifattah7@gmail.com',
+            'password' => bcrypt('12345')
+        ]);
 
         // User::create([
-        //     'name' => 'renal mutaqin',
+        //     'name' => 'renal',
         //     'email' => 'renalmutaqin@gmail.com',
         //     'password' => bcrypt('12345')
         // ]);
@@ -35,6 +37,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Web Programming',
             'slug' => 'web-programming'
         ]);
+
         Category::create([
             'name' => 'Personal',
             'slug' => 'personal'
@@ -50,43 +53,38 @@ class DatabaseSeeder extends Seeder
         // Post::create([
         //     'title' => 'Judul Pertama',
         //     'slug' => 'judul-pertama',
-        //     'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ab nobis esse illo ex iusto excepturi officia? Repellendus magni eius optio,',
-        //     'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ab nobis esse illo ex iusto excepturi officia? Repellendus magni eius optio, similique possimus facilis dolore? Corporis molestias, suscipit consectetur repudiandae omnis ea commodi quos sequi! Asperiores molestias fuga aliquid earum tempora ipsum ab est aut, dolores, natus vitae saepe doloremque minima soluta amet nulla adipisci recusandae quasi, explicabo distinctio velit nesciunt facilis. Aperiam iste consequatur laudantium unde, asperiores perspiciatis, possimus quis ipsa, voluptatum mollitia vitae? Maxime minus voluptas doloribus consequuntur iusto praesentium tempora. Enim, maiores tempora velit totam vel officia neque tenetur quasi ducimus aspernatur, quos, eius esse autem? Ipsam?',
+        //     'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, cum, libero amet rerum cumque dolorem corporis expedita quibusdam, accusamus vitae debitis iusto officia repudiandae deleniti tempora ipsa sed quod?',
+        //     'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, cum, libero amet rerum cumque dolorem corporis expedita quibusdam, accusamus vitae debitis iusto officia repudiandae deleniti tempora ipsa sed quod? Ea, voluptate quis assumenda pariatur eveniet qui aspernatur in, laboriosam rem reiciendis obcaecati magni, fuga hic animi eligendi quas corrupti labore consequatur tempora unde excepturi itaque sunt modi! Consectetur a repellendus illo! Ut labore illo at minima esse ducimus voluptatibus officia harum, natus placeat temporibus eaque ipsam distinctio unde soluta, rem perspiciatis nulla itaque rerum, pariatur amet sequi ad cumque neque? Recusandae sapiente illo laboriosam ut voluptates officiis quo commodi accusamus!',
         //     'category_id' => 1,
         //     'user_id' => 1
         // ]);
 
         // Post::create([
-        //     'title' => 'Judul Ke Dua',
-        //     'slug' => 'judul-ke-dua',
-        //     'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ab nobis esse illo ex iusto excepturi officia? Repellendus magni eius optio,',
-        //     'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ab nobis esse illo ex iusto excepturi officia? Repellendus magni eius optio, similique possimus facilis dolore? Corporis molestias, suscipit consectetur repudiandae omnis ea commodi quos sequi! Asperiores molestias fuga aliquid earum tempora ipsum ab est aut, dolores, natus vitae saepe doloremque minima soluta amet nulla adipisci recusandae quasi, explicabo distinctio velit nesciunt facilis. Aperiam iste consequatur laudantium unde, asperiores perspiciatis, possimus quis ipsa, voluptatum mollitia vitae? Maxime minus voluptas doloribus consequuntur iusto praesentium tempora. Enim, maiores tempora velit totam vel officia neque tenetur quasi ducimus aspernatur, quos, eius esse autem? Ipsam?',
+        //     'title' => 'Judul Kedua',
+        //     'slug' => 'judul-kedua',
+        //     'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, cum, libero amet rerum cumque dolorem corporis expedita quibusdam, accusamus vitae debitis iusto officia repudiandae deleniti tempora ipsa sed quod?',
+        //     'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, cum, libero amet rerum cumque dolorem corporis expedita quibusdam, accusamus vitae debitis iusto officia repudiandae deleniti tempora ipsa sed quod? Ea, voluptate quis assumenda pariatur eveniet qui aspernatur in, laboriosam rem reiciendis obcaecati magni, fuga hic animi eligendi quas corrupti labore consequatur tempora unde excepturi itaque sunt modi! Consectetur a repellendus illo! Ut labore illo at minima esse ducimus voluptatibus officia harum, natus placeat temporibus eaque ipsam distinctio unde soluta, rem perspiciatis nulla itaque rerum, pariatur amet sequi ad cumque neque? Recusandae sapiente illo laboriosam ut voluptates officiis quo commodi accusamus!',
         //     'category_id' => 1,
         //     'user_id' => 1
         // ]);
 
         // Post::create([
-        //     'title' => 'Judul Ke Tiga',
-        //     'slug' => 'judul-ke-tiga',
-        //     'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ab nobis esse illo ex iusto excepturi officia? Repellendus magni eius optio,',
-        //     'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ab nobis esse illo ex iusto excepturi officia? Repellendus magni eius optio, similique possimus facilis dolore? Corporis molestias, suscipit consectetur repudiandae omnis ea commodi quos sequi! Asperiores molestias fuga aliquid earum tempora ipsum ab est aut, dolores, natus vitae saepe doloremque minima soluta amet nulla adipisci recusandae quasi, explicabo distinctio velit nesciunt facilis. Aperiam iste consequatur laudantium unde, asperiores perspiciatis, possimus quis ipsa, voluptatum mollitia vitae? Maxime minus voluptas doloribus consequuntur iusto praesentium tempora. Enim, maiores tempora velit totam vel officia neque tenetur quasi ducimus aspernatur, quos, eius esse autem? Ipsam?',
+        //     'title' => 'Judul Ketiga',
+        //     'slug' => 'judul-ketiga',
+        //     'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, cum, libero amet rerum cumque dolorem corporis expedita quibusdam, accusamus vitae debitis iusto officia repudiandae deleniti tempora ipsa sed quod?',
+        //     'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, cum, libero amet rerum cumque dolorem corporis expedita quibusdam, accusamus vitae debitis iusto officia repudiandae deleniti tempora ipsa sed quod? Ea, voluptate quis assumenda pariatur eveniet qui aspernatur in, laboriosam rem reiciendis obcaecati magni, fuga hic animi eligendi quas corrupti labore consequatur tempora unde excepturi itaque sunt modi! Consectetur a repellendus illo! Ut labore illo at minima esse ducimus voluptatibus officia harum, natus placeat temporibus eaque ipsam distinctio unde soluta, rem perspiciatis nulla itaque rerum, pariatur amet sequi ad cumque neque? Recusandae sapiente illo laboriosam ut voluptates officiis quo commodi accusamus!',
         //     'category_id' => 2,
         //     'user_id' => 1
         // ]);
 
         // Post::create([
-        //     'title' => 'Judul Ke Empat',
-        //     'slug' => 'judul-ke-empat',
-        //     'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ab nobis esse illo ex iusto excepturi officia? Repellendus magni eius optio,',
-        //     'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ab nobis esse illo ex iusto excepturi officia? Repellendus magni eius optio, similique possimus facilis dolore? Corporis molestias, suscipit consectetur repudiandae omnis ea commodi quos sequi! Asperiores molestias fuga aliquid earum tempora ipsum ab est aut, dolores, natus vitae saepe doloremque minima soluta amet nulla adipisci recusandae quasi, explicabo distinctio velit nesciunt facilis. Aperiam iste consequatur laudantium unde, asperiores perspiciatis, possimus quis ipsa, voluptatum mollitia vitae? Maxime minus voluptas doloribus consequuntur iusto praesentium tempora. Enim, maiores tempora velit totam vel officia neque tenetur quasi ducimus aspernatur, quos, eius esse autem? Ipsam?',
+        //     'title' => 'Judul Keempat',
+        //     'slug' => 'judul-keempat',
+        //     'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, cum, libero amet rerum cumque dolorem corporis expedita quibusdam, accusamus vitae debitis iusto officia repudiandae deleniti tempora ipsa sed quod?',
+        //     'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, cum, libero amet rerum cumque dolorem corporis expedita quibusdam, accusamus vitae debitis iusto officia repudiandae deleniti tempora ipsa sed quod? Ea, voluptate quis assumenda pariatur eveniet qui aspernatur in, laboriosam rem reiciendis obcaecati magni, fuga hic animi eligendi quas corrupti labore consequatur tempora unde excepturi itaque sunt modi! Consectetur a repellendus illo! Ut labore illo at minima esse ducimus voluptatibus officia harum, natus placeat temporibus eaque ipsam distinctio unde soluta, rem perspiciatis nulla itaque rerum, pariatur amet sequi ad cumque neque? Recusandae sapiente illo laboriosam ut voluptates officiis quo commodi accusamus!',
         //     'category_id' => 2,
         //     'user_id' => 2
         // ]);
+
     }
 }
-
-
-
-
-
-
